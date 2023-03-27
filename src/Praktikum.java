@@ -12,10 +12,10 @@ public class Praktikum {
             System.out.println("13.09." + year + "."); // если год не високосный
         }
     }
-
+    // Если ввести год который кратен 100 то он не високосный, а выводит как високосный.
     public static boolean isLeapYear(int year) {
         if (year % 400 == 0) {
-            return false; // не високосный год
+            return false; // не високосный год  //!!! Если год делится на 400 то он високосный
         }
         else {
             if (year % 4 == 0) {
